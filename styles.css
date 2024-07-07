@@ -1,0 +1,117 @@
+:root {
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(222.2, 84%, 4.9%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(222.2, 84%, 4.9%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(222.2, 84%, 4.9%);
+    --primary: hsl(221.2, 83.2%, 53.3%);
+    --primary-foreground: hsl(210, 40%, 98%);
+    --secondary: hsl(210, 40%, 96.1%);
+    --secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+    --muted: hsl(210, 40%, 96.1%);
+    --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+    --accent: hsl(210, 40%, 96.1%);
+    --accent-foreground: hsl(222.2, 47.4%, 11.2%);
+    --destructive: hsl(0, 84.2%, 60.2%);
+    --destructive-foreground: hsl(210, 40%, 98%);
+    --border: hsl(214.3, 31.8%, 91.4%);
+    --input: hsl(214.3, 31.8%, 91.4%);
+    --ring: hsl(221.2, 83.2%, 53.3%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    /* background-image: url('https://picsum.photos/1920/1080?random=${randomNum}'); */
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    transition: background-image 0.5s ease-in;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* margin: auto; */
+    margin-top: 10px;
+}
+
+.background-elements .circle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.background-elements .circle.large {
+    width: 4rem;
+    height: 4rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.background-elements .circle.medium {
+    width: 3rem;
+    height: 3rem;
+    top: 4rem;
+    right: 4rem;
+}
+
+.background-elements .circle.small {
+    width: 2rem;
+    height: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--foreground);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}
+
+.created-by {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+}
